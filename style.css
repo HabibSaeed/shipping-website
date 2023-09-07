@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    background-color: #7e61d6;
+}
+
+#call {
+    margin: 110px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+#main {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#heading {
+    color: grey;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#heading a:hover {
+    color: #7e61d6;
+}
+
+#logo {
+    padding: 20px;
+}
+
+#logo i:hover {
+    color: grey;
+}
+
+aside {
+    background-color: #f8f8f8;
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    float: left;
+    border: 1px solid lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+#second {
+    border: 1px solid lightgrey;
+    flex-basis: 50%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+#second #one {
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+#second #one a {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+#second #one a:hover {
+    color: black !important;
+}
+
+#second #two {
+    color: black;
+    background: #7e61d6;
+    text-align: center;
+}
+
+#second #two a {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+#second #two a:hover {
+    color: blue !important;
+}
+
+.call-to-action {
+    margin: 20px;
+}
+
+.call-to-action a {
+    background: #7e61d6;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.call-to-action a:hover {
+    color: black;
+    background: transparent;
+    border: 2px solid grey;
+}
+
+.order-form fieldset {
+    border: none;
+}
+
+.order-form label,
+.order-form input {
+    display: block;
+}
+
+.order-form label {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form select {
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 0px 10px !important;
+}
+
+.order-form input[type="text"]:focus-visible,
+.order-form input[type="email"]:focus-visible,
+.order-form input[type="tel"]:focus-visible,
+.order-form select:focus-visible {
+    outline: 2px solid #7e61d699;
+    border-radius: 3px;
+}
+
+::placeholder {
+    color: #a9a9a9;
+    font-weight: normal;
+}
+
+fieldset.field-box-one {
+    width: 47%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.dual-boxes #one,
+#two {
+    float: left !important;
+}
+
+.clear1 {
+    clear: both;
+}
+
+aside {
+    margin: 30px;
+    padding: 30px;
+}
+
+#second {
+    margin: 30px;
+    padding: 30px;
+}
+
+#one {
+    border-radius: 4px;
+    color: #ccc !important;
+    width: 40% !important;
+    margin: 10px !important;
+    padding: 10px !important;
+}
+
+#one a {
+    color: #7e61d6 !important;
+}
+
+#two {
+    border-radius: 4px;
+    color: #7e61d6;
+    width: 40% !important;
+    margin: 10px !important;
+    padding: 10px !important;
+}
+
+#two a {
+    color: white !important;
+}
+
+nav {
+    color: #ccc;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#to,
+#for {
+    color: #ccc;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#to b {
+    color: black;
+}
+
+#heading a {
+    color: #ebebeb !important;
+    padding: 8px !important;
+}
+
+#heading a:hover {
+    color: #7e61d6 !important;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    #call {
+        width: 100%;
+        height: 80%;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    aside {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #second {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #heading {
+        order: -1;
+    }
+
+    #main {
+        order: -3;
+    }
+
+    #one {
+        width: 50%;
+    }
+
+    #two {
+        width: 50%;
+    }
+
+    fieldset.field-box-one {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+    .order-form input[type="text"],
+    .order-form input[type="email"],
+    .order-form input[type="tel"],
+    .order-form select {
+        width: 100%;
+        height: 40px;
+    }
+
+    @media screen and (max-width: 1080px) {
+        body {
+            margin: 10px;
+        }
+
+        #one {
+            width: 30%;
+            height: 40px;
+            float: left;
+        }
+
+        #two {
+            width: 30%;
+            height: 40px;
+            float: left;
+            clear: both;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        .order-form input[type="text"],
+        .order-form input[type="email"],
+        .order-form input[type="tel"],
+        .order-form select {
+            width: 100%;
+            height: 10%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #call {
+            width: 90%;
+        }
+
+        fieldset.field-box-one {
+            display: block;
+            width: 43% !important;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .field-box-one {
+            margin: 0 !important;
+        }
+
+        #one {
+            margin: 10px;
+        }
+
+        #two {
+            margin: 10px;
+        }
+    }
+}
